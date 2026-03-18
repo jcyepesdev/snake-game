@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Meta básicos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Juego de la Culebrita | Snake Game</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Juega al clásico juego de la culebrita directamente en tu navegador. Reta tus reflejos y supera tu puntuación.">
+    <meta name="keywords" content="snake game, juego de la culebrita, juego clásico, javascript game">
+    <meta name="author" content="Tu Nombre">
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:title" content="🐍 Juego de la Culebrita">
+    <meta property="og:description"
+        content="¿Qué tan lejos puedes llegar? Juega al clásico Snake directamente en tu navegador.">
+    <meta property="og:image" content="https://tudominio.com/assets/img/preview.png">
+    <meta property="og:url" content="https://tudominio.com">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="🐍 Juego de la Culebrita">
+    <meta name="twitter:description" content="Juega Snake online y supera tu puntuación.">
+    <meta name="twitter:image" content="https://tudominio.com/assets/img/preview.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/snake.png" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <main class="game">
+
+        <div class="game__header">
+            <!-- Header -->
+            <header class="game__header-title">
+                <img class="game__logo" src="assets/img/snake.png" alt="Icono de una serpiente">
+                <h1 class="game__title">Juego de la culebrita</h1>
+            </header>
+
+            <!-- Score -->
+            <section class="game__header-score" aria-live="polite">
+                <p class="game__score-text">
+                    Puntuación: <span id="score">0</span>
+                </p>
+            </section>
+        </div>
+
+        <!-- Canvas -->
+        <section class="game__canvas-wrapper">
+            <canvas id="game">
+                Tu navegador no soporta canvas.
+            </canvas>
+        </section>
+
+        <!-- Controls -->
+        <section class="game__mobile-controls">
+            <button data-dir="up">⬆️</button>
+
+            <div>
+                <button data-dir="left">⬅️</button>
+                <button data-dir="down">⬇️</button>
+                <button data-dir="right">➡️</button>
+            </div>
+        </section>
+        <section class="game__controls">
+            <button type="button" id="restart-btn" class="game__button">
+                Reiniciar
+            </button>
+        </section>
+
+    </main>
+
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
